@@ -50,11 +50,7 @@ let S = 2000000;
 let p = 10;
 let years = 5;
 let perepl;
-// let x;
-// let month;
-perepl = (years * 12) * 2000000; 
-console.log("Перелата состаляет-", perepl)
-// month = years / 12;
-// x =  S * month / 1 - (1 + month) * (1 - month);
-// console.log ('ежемесячный взнос по ипотеке', x);
+//процентную ставку поделить на 12
+perepl = (S / 60 + S) * 0.83;
+console.log("Перелата состаляет-", perepl);
 
