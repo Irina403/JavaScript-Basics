@@ -52,5 +52,5 @@ let years = 5;
 let perepl;
 //процентную ставку поделить на 12
 perepl = (S / 60 + S) * 0.83;
-console.log("Перелата состаляет-", perepl);
+console.log("Переплата состаляет-", perepl);
 
