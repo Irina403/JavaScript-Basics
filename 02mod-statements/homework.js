@@ -7,7 +7,7 @@
 Примечание: это задание очень простое. 
 Если вы читая его, поняли суть, не выполняйте его 🙂
 */
-if(true){
+if (true) {
     console.log('1');
 };
 
@@ -21,9 +21,9 @@ if(true){
 let m = 3000;
 let n;
 
-if(m > 50){
+if (m > 50) {
     n = "большое";
-}else{
+} else {
     n = "маленькое";
 }
 console.log(n);
@@ -34,8 +34,8 @@ console.log(n);
 Примечание: это можно сделать прочитав скрипт
 или запустив его консоли браузера.*/
 let i = 2;
-while( i < 9 ){
- console.log( i++ );
+while (i < 9) {
+    console.log(i++);
 }
 
 
@@ -57,11 +57,11 @@ while( i < 9 ){
 
 let y = 45;
 let s;
-while(y < 670){
-    console.log (y++);
-    console.log (y % 10 == 0); 
+while (y < 670) {
+    console.log(y++);
+    console.log(y % 10 == 0);
     // console.log('fsd');
-  
+
 };
 
 // Задание 6
@@ -72,21 +72,42 @@ while(y < 670){
 слово (Например, если n равно 3, то будет
 выводиться слово «три»)
 */
-let num = 7, text = '';
-switch( num ){
-    case 0: text = 'ноль';break;
-    case 1: text = 'один';break;
-    case 2: text = 'два';break;
-    case 3: text = 'три';break;
-    case 4: text = 'четыре';break;
-    case 5: text = 'пять';break;
-    case 6: text = 'шесть';break;
-    case 7: text = 'семь';break;
-    case 8: text = 'восемь';break;
-    case 9: text = 'девять';break;
- //тут ваш код
+let num = 7,
+    text = '';
+switch (num) {
+    case 0:
+        text = 'ноль';
+        break;
+    case 1:
+        text = 'один';
+        break;
+    case 2:
+        text = 'два';
+        break;
+    case 3:
+        text = 'три';
+        break;
+    case 4:
+        text = 'четыре';
+        break;
+    case 5:
+        text = 'пять';
+        break;
+    case 6:
+        text = 'шесть';
+        break;
+    case 7:
+        text = 'семь';
+        break;
+    case 8:
+        text = 'восемь';
+        break;
+    case 9:
+        text = 'девять';
+        break;
+        //тут ваш код
 }
-console.log(num,text);
+console.log(num, text);
 
 
 // Задание 7 (*)
@@ -98,7 +119,7 @@ console.log(num,text);
 */
 let size = 120;
 let unit = "Кб";
-let bt = 120*1024;
+let bt = 120 * 1024;
 console.log(bt);
 
 
@@ -108,20 +129,17 @@ console.log(bt);
 календаря на HTML. Примечание: выполнить задание для
 одного месяца, используя HTML-элемент table
 */
-let newElem=document.createElement('table');
 
-let newRow=newElem.insertRow(0);
-let newCell = newRow.insertCell(0);
-newCell.innerHTML="строка 1 столбец 1";
-
-
-// let newCell = newRow.insertCell(1);
-// newCell.innerHTML="строка 1 столбец 2";
-
-
-// let newRow2=newElem.insertRow(1);
-// let newCell = newRow2.insertCell(0);
-// newCell.innerHTML="строка 2 столбец 1";
-
-
-document.body.appendChild(newElem);
+let calendarMonth = '<table class=table>';
+for (let i = 0, k = 0; i < 6; i++) {
+    calendarMonth += '<tr>';
+    for (let j = 0; j < 7; j++) {
+        calendarMonth += '<td>';
+        if (k > 0 && k < 32) {
+            calendarMonth += k;
+        }
+        k++;
+    }
+}
+calendarMonth += '</table>';
+document.write(calendarMonth);

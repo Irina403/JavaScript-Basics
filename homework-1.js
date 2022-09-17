@@ -29,20 +29,20 @@ console.log(a6, a7, a8, a9, a10);
 let height = 32;
 let width = 10;
 let s = height * width;
-console.log(s,"см");
+console.log(s, "см");
 
 // 5 задание
 let heightC = 10;
 let dC = 4;
 let v = 3.14 * Math.pow(dC / 2, 2) * heightC;
-console.log(v); 
+console.log(v);
 
 // 6 задание
 let n = 3;
 let m = 4;
 let k;
 
-k = Math.sqrt(Math.pow(n,2) + Math.pow(m,2));
+k = Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
 console.log(k);
 
 // 8 задание
@@ -53,4 +53,3 @@ let perepl;
 //процентную ставку поделить на 12
 perepl = (S / 60 + S) * 0.83;
 console.log("Переплата состаляет-", perepl);
-
